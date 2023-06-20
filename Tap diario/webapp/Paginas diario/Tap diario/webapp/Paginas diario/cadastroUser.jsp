@@ -14,7 +14,7 @@
 		<input type="text" name="nameUser" id="nameUser" placeholder="digite seu nome completo">
 		<br><br>
 		<label>E-mail</label>
-		<input type="text" name="email" id="email" placeholder="exemplo@gmail.com">
+		<input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
 		<br><br>
 		<label>Senha</label>
 		<input type="password" name="senhaUser" id="senhaUser" placeholder="crie sua senha">
@@ -27,17 +27,17 @@
 	
 	<!--Área de login -->
 	<div>
-		<form name="formUser" id="idUser" action="respostaLogin.jsp" method="POST">
+		<form name="formUser" id="idUser2" action="respostaLogin.jsp" method="POST">
 		<br><br>
 		<label>Se você já é cadastrado:</label>
 		<br><br>
 		<label>E-mail</label>
-		<input type="text" name="email" id="email" placeholder="exemplo@gmail.com">
+		<input type="email" name="email" id="email2" placeholder="exemplo@gmail.com">
 		<br><br>
 		<label>Senha</label>
-		<input type="password" name="senhaUser" id="senhaUser" placeholder="crie sua senha">
+		<input type="password" name="senha" id="senhaUser2" placeholder="crie sua senha">
 		<br><br>
-		<input type="submit" value="logar" name="logaar" id="logar">
+		<input type="submit" value="logar" name="logar" id="logar">
 		</form>
 	</div>
 </body>

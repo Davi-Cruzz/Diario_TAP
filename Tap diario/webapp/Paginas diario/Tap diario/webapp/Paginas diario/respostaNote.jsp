@@ -16,7 +16,7 @@ UserDao login = new UserDao();
 User user = new User();
 Integer id_user = (Integer)
 
-session.getAttribute("id_user");
+session.getAttribute("id_cadastro");
 try{
 	if(id_user == -1 || id_user == null){
 		response.sendRedirect("meuDiario.jsp");
