@@ -1,19 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="Util.Conexao" %>
 <%@ page import="DAO.UserDao" %>
 <%@ page import="Model.User" %>
     
 <%
 
 //validação de login
+
 UserDao login = new UserDao();
 User user = new User();
 Integer id_user = (Integer)
-
-session.getAttribute("id_user");
+session.getAttribute("id_cadastro");
 try{
 	if(id_user == -1 || id_user == null){
-		response.sendRedirect("meuDiario.jsp");
+		response.sendRedirect("cadastroUser.jsp");
 	}else{
 		try{
 			user = login.retornaUser(id_user);
@@ -25,14 +26,17 @@ try{
 	response.sendRedirect("cadastroUser.jsp");
 }
 
+
+Conexao con = null;
+
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Minhas anotações</title>
 </head>
 <body>
-
+	<a href="anotacoes.html">Nova anotação</a>
 </body>
 </html>
