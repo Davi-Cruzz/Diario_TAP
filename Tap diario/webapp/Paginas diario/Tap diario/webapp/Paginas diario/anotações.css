@@ -62,13 +62,13 @@ main{
     outline: none;
     display: block;
     font-size: 26px;
-    right: 500px;
+    right: 600px;
     top: 100px;
     border-radius: 20px;
     padding-bottom: 20px;
     padding-right: 50px;
     padding-left: 40px;
-    width: 500px;
+    width: 400px;
     height: 75px;
 
     background: #FFFFFF;
