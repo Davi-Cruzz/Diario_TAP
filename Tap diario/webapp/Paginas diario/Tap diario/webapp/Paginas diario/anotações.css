@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+body{
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'IBM Plex Mono';
+
+}
+main{
+    position: absolute;
+    background: #46B1FF;
+    width: 80%;
+    height: 100%;
+
+}
+#divhora{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    background: #61C016;
+    border: 1px solid #27780A;
+    border-radius: 5px;
+    padding: 10px;
+    left: 200px;
+    top: 107px;
+
+}
+#note{
+    position: absolute;
+    outline: none;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    resize: none;
+    right: 170px;
+    bottom: 10px;
+
+    background: #FFFFFF;
+    border: none;
+
+}
+#Terminar{
+    position: absolute;
+    width: 204px;
+    height: 69px;
+    left: 1415px;
+    top: 868px;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: 'IBM Plex Mono';;
+    color: #FDFDFD; 
+
+    background: #61C016;
+    border: 1px solid #27780A;
+    border-radius: 10px;
+}
+#titulo{
+    position: absolute;
+    outline: none;
+    display: block;
+    font-size: 26px;
+    right: 500px;
+    top: 100px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 40px;
+    width: 500px;
+    height: 75px;
+
+    background: #FFFFFF;
+    border: none;
+
+}
+
+
