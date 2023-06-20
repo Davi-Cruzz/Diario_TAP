@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Meu diário</title>
-
+<link rel="stylesheet" href="anotações.css".css">
 <script type="text/javascript">
 	function dataHora()
 	{
@@ -20,6 +20,7 @@
 
 </head>
 <body onload="dataHora()">
+	<main>
 	<form name="formNote" id="idNote" action="respostaNote.jsp" method="POST" onload="">
 	<label>Título da anotação:</label>
 	<br>
@@ -30,10 +31,10 @@
 	<label>Anotação:</label>
 	<br>
 	<textarea id="note" name="mensagem" rows="20" cols="50">
-	Digite a ideia que quer guardar...
 	</textarea>
 	<br><br>
 	<input type="submit" value="Salvar anotação" name="salvar" id="salvar" onclick="dataHora()">
 	</form>
+</main>
 </body>
 </html>
