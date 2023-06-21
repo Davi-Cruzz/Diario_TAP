@@ -31,3 +31,7 @@ p{
     width: fit-content;
 
 }
+a{
+    position: relative;
+    color: black;
+}

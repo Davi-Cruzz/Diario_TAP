@@ -32,11 +32,15 @@ Conexao con = null;
 %>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Minhas anotações</title>
-</head>
-<body>
-	<a href="anotacoes.html">Nova anotação</a>
-</body>
+    <head>
+        <link rel="stylesheet" href="meudiario.css">
+        <title>Meu diário</title>
+    </head>
+    <body> 
+        <a href="anotacoes.html">Nova anotação</a>
+        <header>
+            <p>Anotações</p>
+        </header>
+       
+    </body>
 </html>
