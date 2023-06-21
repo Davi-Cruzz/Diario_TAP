@@ -34,20 +34,32 @@ Conexao con = null;
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="meudiario.css">
 <meta charset="UTF-8">
 <title>Minhas anotações</title>
 </head>
 <body>
+	<div id="no"> <a href="anotacoes.jsp">Nova anotação</a> 
+    <div id="del"><a href="deletaNote.jsp">Deletar anotação</a> 
+    <div id="sa"><a href="cadastroUser.jsp">Sair</a>
+    </div>
+    </div>
+    </div>   
+	<header>
+		<p>Anotações</p>
+	</header>    
 <%
 	DiarioDao notaDao = new DiarioDao();
 	ArrayList<Anotacoes> notes = notaDao.ArrayListNotas();
 
 	for(Anotacoes n: notes){
 %>
-<div> Título: <%= n.getAssunto()  %> <div> Anotação: <%= n.getMensagem()  %> </div> Nº: <%= n.getId_paginas()  %></div>
+<div id="getassunto"><%= n.getAssunto()  %>
+<div id="getmensagem"><%= n.getMensagem()  %> 
+<div id="getpagina"><%= n.getId_paginas()  %>
+</div>
+</div>
+</div>
 <%} %>
-	<a href="deletaNote.jsp">Deletar anotação</a>
-	<a href="anotacoes.html">Nova anotação</a>
-	<a href="cadastroUser.jsp">Sair</a>
 </body>
 </html>
