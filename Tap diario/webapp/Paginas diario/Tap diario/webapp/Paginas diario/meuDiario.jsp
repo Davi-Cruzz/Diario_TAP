@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="Util.Conexao" %>
-<%@ page import="DAO.UserDao" %>
-<%@ page import="Model.User" %>
+<%@page import="java.util.ArrayList"%>
+<%@ page import="DAO.*" %>
+<%@ page import="Model.*" %>
     
 <%
 
@@ -37,6 +38,15 @@ Conexao con = null;
 <title>Minhas anotações</title>
 </head>
 <body>
+<%
+	DiarioDao notaDao = new DiarioDao();
+	ArrayList<Anotacoes> notes = notaDao.ArrayListNotas();
+
+	for(Anotacoes n: notes){
+%>
+<div><%= n.getAssunto()  %></div>
+<div><%= n.getMensagem()  %></div>
+<%} %>
 	<a href="anotacoes.html">Nova anotação</a>
 </body>
 </html>
