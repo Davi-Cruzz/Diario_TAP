@@ -57,6 +57,9 @@ main{
     border: 1px solid #27780A;
     border-radius: 10px;
 }
+#salvar:hover{
+    background: #234708;
+}
 #titulo{
     position: absolute;
     outline: none;
@@ -74,6 +77,27 @@ main{
     background: #FFFFFF;
     border: none;
 
+}
+a{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    right: 6%;
+    top: 4%;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: 'IBM Plex Mono';;
+    color: #FDFDFD;
+    padding: 10px; 
+    cursor: pointer;
+
+    background: #DF1313;
+    border: 1px solid #710639;
+    border-radius: 10px;
+    
+}
+a:hover{
+    background: #530606;
 }
 
 
