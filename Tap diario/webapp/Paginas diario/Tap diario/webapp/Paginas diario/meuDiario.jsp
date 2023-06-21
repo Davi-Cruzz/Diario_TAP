@@ -34,7 +34,6 @@ Conexao con = null;
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="meudiario.css">
 <meta charset="UTF-8">
 <title>Minhas anotações</title>
 </head>
@@ -45,9 +44,10 @@ Conexao con = null;
 
 	for(Anotacoes n: notes){
 %>
-<div><%= n.getAssunto()  %></div>
-<div><%= n.getMensagem()  %></div>
+<div> Título: <%= n.getAssunto()  %> <div> Anotação: <%= n.getMensagem()  %> </div> Nº: <%= n.getId_paginas()  %></div>
 <%} %>
+	<a href="deletaNote.jsp">Deletar anotação</a>
 	<a href="anotacoes.html">Nova anotação</a>
+	<a href="cadastroUser.jsp">Sair</a>
 </body>
 </html>
