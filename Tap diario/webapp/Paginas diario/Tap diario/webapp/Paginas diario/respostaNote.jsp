@@ -18,7 +18,7 @@ Integer id_user = (Integer)
 
 session.getAttribute("id_cadastro");
 try{
-	if(id_user == -1 || id_user == null){
+	if(id_user == -1 || id_user == null || id_user == 0){
 		response.sendRedirect("meuDiario.jsp");
 	}else{
 		try{
@@ -36,15 +36,19 @@ Anotacoes notes = new Anotacoes();
 //notes.setData(request.getParameter("data_e_hora"));
 notes.setAssunto(request.getParameter("titulo"));
 notes.setMensagem(request.getParameter("mensagem"));
+notes.setId_cadastro(user.getId_cadastro());
+
+System.out.println(user.getId_cadastro());
 
 DiarioDao anotacao = new DiarioDao();
+
 ok = anotacao.InserirPagina(notes);
 
 if(ok){
 %>
 <script type="text/javascript">
 	alert("Anotação salva com sucesso!!")
-	window.location.href="anotacoes.html"
+	window.location.href="meuDiario.jsp"
 </script>
 <%}else{ %>
 <script type="text/javascript">
