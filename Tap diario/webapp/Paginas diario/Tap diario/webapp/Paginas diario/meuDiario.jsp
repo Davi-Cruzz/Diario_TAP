@@ -34,6 +34,7 @@ Conexao con = null;
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="meudiario.css">
 <meta charset="UTF-8">
 <title>Minhas anotações</title>
 </head>

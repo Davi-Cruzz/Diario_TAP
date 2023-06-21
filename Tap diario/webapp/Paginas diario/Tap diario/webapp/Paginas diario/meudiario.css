@@ -14,6 +14,7 @@
 body{
     background: url(image\ 1.png);
     background-repeat: no-repeat;
+    display:block
     
 }
 header{
@@ -32,6 +33,16 @@ p{
 
 }
 a{
-    position: relative;
-    color: black;
+    position: absolute;
+    background: #A8349C;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    bottom:5%;
+    left: 87%;
+    display: flex;
+}
+div{
+    
 }
