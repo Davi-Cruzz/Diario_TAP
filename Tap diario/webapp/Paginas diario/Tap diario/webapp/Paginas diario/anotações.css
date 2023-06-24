@@ -13,7 +13,7 @@ main{
     position: absolute;
     background: #46B1FF;
     width: 80%;
-    height: 100%;
+    height: 80%;
 
 }
 #divhora{
@@ -24,20 +24,15 @@ main{
     border: 1px solid #27780A;
     border-radius: 5px;
     padding: 10px;
-    left: 200px;
-    top: 107px;
+    right: 3%;
+    top: 5%;
 
 }
 #note{
-    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
     outline: none;
-    font-size: 20px;
-    padding: 40px;
-    border-radius: 10px;
-    resize: none;
-    right: 170px;
-    bottom: 10px;
-
+ 	height: 400px;
     background: #FFFFFF;
     border: none;
 
@@ -46,8 +41,8 @@ main{
     position: absolute;
     width: 204px;
     height: 69px;
-    left: 1415px;
-    top: 868px;
+    right: 5%;
+    bottom: 10%;
     box-sizing: border-box;
     font-size: 32px;
     font-family: 'IBM Plex Mono';;
@@ -62,42 +57,39 @@ main{
 }
 #titulo{
     position: absolute;
-    outline: none;
     display: block;
-    font-size: 26px;
-    right: 600px;
-    top: 100px;
+    font-size: 20px;
+    right: 50%;
+    top: 3%;
     border-radius: 20px;
-    padding-bottom: 20px;
-    padding-right: 50px;
-    padding-left: 40px;
+    margin-bottom: 40px;
     width: 400px;
-    height: 75px;
-
-    background: #FFFFFF;
+    height: 50px;
+	text-align: center;
+    background: #d3d3d3;
     border: none;
 
 }
+
 a{
-    position: absolute;
+    
     width: fit-content;
     height: fit-content;
     right: 6%;
-    top: 4%;
-    box-sizing: border-box;
+    bottom: 0;
+    margin-left: 800px;
     font-size: 32px;
-    font-family: 'IBM Plex Mono';;
     color: #FDFDFD;
     padding: 10px; 
     cursor: pointer;
-
     background: #DF1313;
     border: 1px solid #710639;
     border-radius: 10px;
+    text-decoration: none;
+    
+    z-index: 3;
     
 }
 a:hover{
     background: #530606;
 }
-
-

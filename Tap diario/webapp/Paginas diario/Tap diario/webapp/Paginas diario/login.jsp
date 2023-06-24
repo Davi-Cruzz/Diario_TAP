@@ -8,16 +8,15 @@
 <title>Bem vindo ao Mediari</title>
 </head>
 <body>
-    <logos>
+    
     <p class="texto1"> Diário virtual</p>
     <p class="Mediari">Mediari</p>
     <p id="login">Login</p>
-    </logos>
+
     <a href="Cadastro.html">CADASTRA-SE</a>
 	<!--Área de login -->
     <main>
 		<form name="formUser" id="idUser" action="respostaLogin.jsp" method="POST">
-            </div>
             <div>
                 <label>E-mail</label>
                 <input type="email" name="email" id="email" required>

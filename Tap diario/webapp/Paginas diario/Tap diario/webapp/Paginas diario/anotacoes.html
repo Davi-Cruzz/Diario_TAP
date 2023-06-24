@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Meu diário</title>
-
+<link rel="stylesheet" href="anotações.css">
 <script type="text/javascript">
 	function dataHora()
 	{
@@ -17,24 +17,22 @@
 		
 	}
 </script>
-
+	
 </head>
 <body onload="dataHora()">
-	<form name="formNote" id="idNote" action="respostaNote.jsp" method="POST">
-	<label>Título da anotação:</label>
-	<br>
-	<input type="text" name="titulo" id="titulo" placeholder="ex: lição de casa">
+		<main>
+		<form name="formNote" id="idNote" action="respostaNote.jsp" method="POST" onload="">
+		<br>
+		<input type="text" name="titulo" id="titulo" placeholder="Insira o título(Máx.60 caracteres)" maxlength="60">
+		<div id="divhora"><label id="dThora">Dia da anotação:<br><br><strong id="dataNote"></strong></label>
+		</div>
+		<textarea name="mensagem" id="note" rows="31" cols="100" minlength="30"></textarea>
+		<br><br>
+		<input type="submit" value="Terminar" name="salvar" id="salvar">
+		</form>
+	</main>
 	
-	<label id="dThora">Horário da anotação:<strong id="dataNote"></strong></label>
-	<br><br>
-	<label>Anotação:</label>
-	<br>
-	<textarea id="note" name="mensagem" rows="20" cols="50">
-	Digite a ideia que quer guardar...
-	</textarea>
-	<br><br>
-	<input type="submit" value="Salvar anotação" name="salvar" id="salvar">
-	</form>
-	<a href="meuDiario.jsp">Cancelar</a>
+	 <a href="meuDiario.jsp">Cancelar</a>
+	 
 </body>
 </html>
