@@ -47,6 +47,19 @@ a{
     display: flex;
     
 }
+a.botaoLink{
+    position: absolute;
+    background: #0000ff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 2px;
+    color: #ffffff;
+    bottom:5%;
+    display: block;
+    font-size: 0.8em;
+    position: relative;
+    width: 10vh;
+}
 .link{
 	left: 85%;
 }

@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-		<logos>
+		<div>
         <p class="texto1"> Diário virtual</p>
         <p class="Mediari">Mediari</p>
-        </logos>
+        </div>
         <p id="cadastro">Cadastro</p>
 	<!--Área de cadastro -->
 		<main>
@@ -45,7 +45,7 @@
 			</div>
 			<div>
 			<label>Senha</label>
-			<input type="password" name="senha" id="senhaUser2" placeholder="crie sua senha">		
+			<input type="password" name="senha" id="senhaUser2" placeholder="entre com sua senha">		
 			<input type="submit" value="logar" name="logar" id="logar">
 			</div>
 			</form>
