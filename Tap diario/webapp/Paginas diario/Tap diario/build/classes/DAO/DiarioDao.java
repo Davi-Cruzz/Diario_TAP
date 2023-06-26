@@ -24,18 +24,21 @@ public class DiarioDao {
 	}
 	//READ
 public Anotacoes listarNotas(int id) {
-		Conexao con = null;
-		try {
-			con = new Conexao();
-			ResultSet result = con.executeQuery("SELECT `assunto`, `mensagem` FROM diario_paginas WHERE id_cadastro = "+id);
-			result.next();
-			Anotacoes notes = new Anotacoes();
-			notes.setAssunto("assunto");
-			notes.setMensagem("mensagem");
-			return notes;
-		}catch(Exception e) {
-			System.out.println("Erro ao listar as coisas"+e);
-			return null;
+	Conexao con = null;
+	try {
+		con = new Conexao();
+		ResultSet result = con.executeQuery("SELECT * FROM diario_paginas WHERE id_paginas=" + id);
+		result.next();
+		Anotacoes nota = new Anotacoes();
+		nota.setId_paginas(result.getInt("id_paginas"));
+		nota.setAssunto(result.getString("assunto"));
+		nota.setMensagem(result.getString("mensagem"));
+		
+		return nota;
+	
+	}catch(Exception e) {
+		System.out.println("Erro ao listar Professor " + e);
+		return null;
 		}
 	}
 
@@ -43,7 +46,7 @@ public boolean deletarNota(int id) {
 	Conexao con = null;
 	try {
 		con = new Conexao();
-		con.executeUpdate("DELETE FROM diario_paginas WHERE id_cadastro="+id);
+		con.executeUpdate("DELETE FROM diario_paginas WHERE id_paginas="+id);
 		return true;
 	}catch(Exception e) {
 		System.out.println("Erro ao apagar nota");
@@ -72,6 +75,22 @@ public ArrayList<Anotacoes> ArrayListNotas(){
 	}catch(Exception e) {
 		System.out.println("Erro ao listar anotacoes"+e);
 		return null;
+		}
+	}
+
+public boolean alterarNota(Anotacoes a) {
+	Conexao con = null;
+	
+	try {
+		con = new Conexao();
+		con.executeUpdate("UPDATE diario_paginas SET "
+				+"assunto = '"+a.getAssunto()+"',"
+				+"mensagem = '"+a.getMensagem()+"' "
+				+"WHERE id_paginas="+a.getId_paginas());
+		return true;			
+	}catch(Exception e) {
+		System.out.println("Erro ao alterar anotacao" + e);
+		return false;
 		}
 	}
 }
