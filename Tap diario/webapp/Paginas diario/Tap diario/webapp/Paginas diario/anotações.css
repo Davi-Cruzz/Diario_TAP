@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    transition: all 10ms ease-in-out;
+    font-family: 'IBM Plex Mono', monospace;
+}
 body{
     background: #F3F3F3;
     display: flex;
@@ -6,44 +16,38 @@ body{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: 'IBM Plex Mono';
 
 }
 main{
     position: absolute;
     background: #46B1FF;
     width: 80%;
-    height: 80%;
-
-}
-#divhora{
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    background: #61C016;
-    border: 1px solid #27780A;
-    border-radius: 5px;
-    padding: 10px;
-    right: 3%;
-    top: 5%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
 
 }
 #note{
-    margin-top: 5%;
-    margin-left: 5%;
-    outline: none;
- 	height: 400px;
-    background: #FFFFFF;
-    border: none;
-
+        position: absolute;
+        outline: none;
+        font-size: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        resize: none;
+        height: 75vh;
+        width: 80%;
+        bottom: 2.5%;
+        right: 10%;
+        
+    
+        background: #FFFFFF;
+        border: none;
 }
 #salvar{
     position: absolute;
-    width: 204px;
-    height: 69px;
-    right: 5%;
-    bottom: 10%;
     box-sizing: border-box;
+    right: 0;
+    top: 15%;
     font-size: 32px;
     font-family: 'IBM Plex Mono';;
     color: #FDFDFD; 
@@ -51,33 +55,30 @@ main{
     background: #61C016;
     border: 1px solid #27780A;
     border-radius: 10px;
+    padding: 10px;
+
 }
-#salvar:hover{
+ #salvar:hover{
     background: #234708;
 }
 #titulo{
     position: absolute;
+    outline: none;
     display: block;
-    font-size: 20px;
-    right: 50%;
-    top: 3%;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    width: 400px;
-    height: 50px;
-	text-align: center;
-    background: #d3d3d3;
-    border: none;
-
+    height: fit-content;
+    width: fit-content;
+    top: 15%;
+    left: 20%;
+    font-size: 26px;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 5px;
 }
-
 a{
-    
+    position: absolute;
     width: fit-content;
     height: fit-content;
-    right: 6%;
-    bottom: 0;
-    margin-left: 800px;
+    box-sizing: border-box;
     font-size: 32px;
     color: #FDFDFD;
     padding: 10px; 
@@ -85,8 +86,7 @@ a{
     background: #DF1313;
     border: 1px solid #710639;
     border-radius: 10px;
-    text-decoration: none;
-    
+    right: 0%;
     
 }
 a:hover{

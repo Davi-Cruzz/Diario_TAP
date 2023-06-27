@@ -12,23 +12,18 @@
 }
 
 
-body{
+
+#loginecadastro{
     width: 100%;
     height: 100vh;
     background: url(image\ 1.png);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin: 0; 
 }
-#cadastro{
-    position: absolute;
-    text-align: center;
-    font-size: 26px;
-    top: 25%;
-    right: 55%;
-
-}
-
 main{
-    position: absolute;
+    position: relative;
     width: 500px;
     height: 624px;
     right: 30px;
@@ -36,46 +31,35 @@ main{
     background: #46B1FF;
     display: flex;
     align-items: center;
-    margin-left: 10px;
     border-radius: 10px;
 }
-main.esquerda{
-    position: absolute;
+main.login{
     width: 500px;
     height: 624px;
     left: 30px;
     top: 291px;
     background: #46B1FF;
     display: flex;
-    align-items: center;
-    margin-left: 10px;
     border-radius: 10px;
 }
 div{
     position: relative;
-    margin: 75px;
+    margin: 80px;
 }
-
-.texto1{
+.container{
     position: absolute;
-    width: 182px;
-    height: 26px;
-    top: 70px;
-    left: 734px;
-   font-style: normal;
-   font-weight: 400;
+    height: fit-content;
+    width: fit-content;
+}
+.texto{
+    font-style:normal;
+}
+.texto1{
    font-size: 20px;
-   line-height: 26px;
    color: #1E1E1E;
 }
-.Mediari{
-    position: absolute;
-    font-style: normal;
-    top: 85px; 
-    left: 728px;
-    font-weight: 400;
+.texto2{
     font-size: 64px;
-    line-height: 83px;
     color: #1E1E1E;
 }
 input{
@@ -90,10 +74,9 @@ input{
 input:hover{
     background: transparent;
 }
-#salvar, #logar{
+#salvar, #logar {
     position: absolute;
     background: #fffefe;
-    background-repeat: no-repeat;
     color: #1E1E1E;
     border: 1.5px solid #1E1E1E;
     border-radius: 5px;
@@ -102,19 +85,12 @@ input:hover{
     right: 10%;
     bottom: 10%;
     padding: 10px;
+    cursor: pointer;
 }
 #salvar:hover{
     background: #46B1FF;
 }
 
-#logar{
-    position: relative;
-    text-align: center;
-    
-    top: 25%;
-    left: 300px;
-
-}
 #logar:hover{
     background: #46B1FF;
 }
@@ -122,15 +98,4 @@ label{
     position: relative;
     bottom: 40px; 
     font-size: 20px;
-}
-a{
-  position: absolute;
-  background: transparent;
-  color: #1E1E1E;
-  font-size: 20px;
-  left: 1100px;
-  top: 25.5%;
-  padding: 0x;
-  cursor: pointer;
-
 }

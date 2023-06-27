@@ -25,18 +25,17 @@
 	</head>
 	<body onload="dataHora()">
 		
-		<main>
+		<main id="mainA">
+			<a id= "cancelar" href="meuDiario.jsp">Cancelar</a>
 		<form name="formNote" id="idNote" action="respostaNote.jsp" method="POST" onload="">
-		<br>
 		<input type="text" name="titulo" id="titulo" placeholder="Insira o título(Máx.60 caracteres)" maxlength="60">
 		<div id="divhora"><label id="dThora">Dia da anotação:<br><br><strong id="dataNote"></strong></label>
 		</div>
-		<textarea name="mensagem" id="note" rows="31" cols="100" minlength="30"></textarea>
-		<br><br>
+		<textarea name="mensagem" id="note" rows="20" cols="50" minlength="10"></textarea>
 		<input type="submit" value="Terminar" name="salvar" id="salvar">
 		</form>
 	</main>
 	
-	 <a href="meuDiario.jsp">Cancelar</a>
+	 
 	</body>
 	</html>

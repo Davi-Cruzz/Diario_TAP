@@ -10,11 +10,9 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
-
-body{
+#bodydiario{
     background: url(image\ 1.png);
     background-repeat: no-repeat;
-    display:block
     
 }
 header{
@@ -23,17 +21,33 @@ header{
     border-bottom: 1px solid black;
     width: 100%;
     height: 12%;
+    color: black;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+div{
+    margin: 20px;
+    background: #FFFFFF;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
 }
 div.notas{
-    position: relative;
-    top:27%;
-    left:15%;
+    position: absolute;
+    top:12%;
+    left:70vh;
     font-size: 20px;
     align-content: center;
     width: fit-content;
-    background: #7bafc4;
+    height: fit-content;
+    background: #46B1FF;
     border-radius: 8px;
-    margin-top: 10px;
+    padding: 10px;
+    display: block;
 
 }
 a{

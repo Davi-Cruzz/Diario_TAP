@@ -2,31 +2,53 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="login.css">
 <title>Bem vindo ao Mediari</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-    <logos>
-    <p class="texto1"> Diário virtual</p>
-    <p class="Mediari">Mediari</p>
-    <p id="login">Login</p>
-    </logos>
-    <a href="Cadastro.html">CADASTRAR-SE</a>
+<body id="loginecadastro">
+	   <div class="container">
+        <p class="texto texto1"> Diário virtual</p>
+        <p class="texto texto2">Mediari</p>
+	   </div>
+	<!--Área de cadastro -->
+		<main>
+			<form name="formUser" id="idUser" action="respostaCadastro.jsp" method="POST">
+			<div class="cadastrado">
+				<label>Nome completo</label>
+				<input type="text" name="nameUser" id="nameUser" required>
+			</div>
+			<div class="cadastrado">
+				<label>E-mail</label>
+				<input type="email" name="email" id="email" required>
+			</div>
+			<div class="cadastrado">
+			<label>Senha</label>
+			<input type="password" name="senhaUser" id="senhaUser"  required>
+			</div>
+			<input type="submit" value="salvar" name="salvar" id="salvar">
+			</form>
+		</main>
+	
+	
+	
 	<!--Área de login -->
-    <main>
-		<form name="formUser" id="idUser" action="respostaLogin.jsp" method="POST">
-            </div>
-            <div>
-                <label>E-mail</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-             <div>
-                <label>Senha</label>
-                <input type="password" name="senhaUser" id="senhaUser" required>
-            </div>
-		<input type="submit" value= "Entrar" name="logaar" id="logar">
-		</form>
-
-</main>
+		<main class="login">
+			<form name="formUser" id="idUser2" action="respostaLogin.jsp" method="POST">
+			<div class="cadastrado">		
+				<label>Se você já é cadastrado:</label>
+				<br><br>
+				<label>E-mail</label>
+				<input type="email" name="email" id="email2" required>
+			
+			</div>
+			<div class="cadastrado">
+			<label>Senha</label>
+			<input type="password" name="senha" id="senhaUser2" required>		
+			
+</div>
+			<input type="submit" value="logar" name="logar" id="logar">
+			</form>
+		</main>
+			
 </body>
 </html>

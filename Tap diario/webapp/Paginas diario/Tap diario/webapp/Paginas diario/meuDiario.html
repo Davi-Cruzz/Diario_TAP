@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="meudiario.css">
-        <title>Meu diário</title>
-    </head>
-    <body> 
-        <div id="no"> <a href="anotacoes.jsp">Nova anotação</a> 
-        <div id="del"><a href="deletaNote.jsp">Deletar anotação</a> 
-        <div id="sa"><a href="cadastroUser.jsp">Sair</a>
-        </div>
-        </div>
-        </div>
-        
-        <header>
-            <p>Anotações</p>
-        </header>
-        <div id="getassunto">elemento A 
-        <div id="getmensagem">elemento B
-        <div id="getpagina"> n
-</div>    </div> </div> 
+<head>
+<meta charset="UTF-8">
+<title>Minhas anotações</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body id="bodydiario">
+<header>Anotações</header>
+<%
+	DiarioDao notaDao = new DiarioDao();
+	ArrayList<Anotacoes> notes = notaDao.ArrayListNotas();
+
+	for(Anotacoes n: notes){
+%>
+	
+<div class="notas">
+	<div> 
+		Título: <%= n.getAssunto()  %>
+	</div> 
+	<div>
+	 	Anotação: <%= n.getMensagem()  %> 
+	 </div> 
+	 <div> 
+	 	Nº: <%= n.getId_paginas()  %>
+	 </div>
+	 <a class="botaoLink" href="deletaNote.jsp?id_paginas=<%=n.getId_paginas() %>">Apagar</a>
+	 <a class="botaoLink" href="alteraNote.jsp?id_paginas=<%=n.getId_paginas() %>">Editar</a>
+</div>
+<%} %>
+	<a class="link" href="anotacoes.html">Nova anotação</a>
+	<a class="link2" href="cadastroUser.jsp">Sair</a>
+</body>
 </html>

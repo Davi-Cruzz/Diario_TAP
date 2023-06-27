@@ -48,13 +48,13 @@ Conexao con = null;
 %>
 	
 <div class="notas">
-	<div> 
+	<div class="elementos"> 
 		Título: <%= n.getAssunto()  %>
 	</div> 
-	<div>
+	<div class="elementos">
 	 	Anotação: <%= n.getMensagem()  %> 
 	 </div> 
-	 <div> 
+	 <div class="elementos"> 
 	 	Nº: <%= n.getId_paginas()  %>
 	 </div>
 	 <a class="botaoLink" href="deletaNote.jsp?id_paginas=<%=n.getId_paginas() %>">Apagar</a>
