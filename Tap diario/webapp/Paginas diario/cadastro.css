@@ -50,17 +50,20 @@ div{
     position: absolute;
     height: fit-content;
     width: fit-content;
+
 }
-.texto{
-    font-style:normal;
+.container p{
+     color: #1E1E1E;
 }
 .texto1{
    font-size: 20px;
-   color: #1E1E1E;
+   position: relative;
+   
+
+   
 }
 .texto2{
     font-size: 64px;
-    color: #1E1E1E;
 }
 input{
     position: relative;
